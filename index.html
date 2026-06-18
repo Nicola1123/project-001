@@ -1,620 +1,320 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The Tahlia Cafe - Premium cafe in Riyadh, Saudi Arabia. Experience authentic Arabic coffee, gourmet cuisine, and elegant ambiance in the heart of the city.">
-    <meta name="keywords" content="The Tahlia Cafe, Riyadh cafe, Saudi coffee, restaurant Riyadh, Arabic coffee, gourmet food, premium cafe, Al-Tahlia street">
-    <meta name="author" content="The Tahlia Cafe">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="The Tahlia Cafe | Premium Dining & Coffee in Riyadh">
-    <meta property="og:description" content="Experience the finest Arabic coffee and gourmet cuisine at The Tahlia Cafe, Riyadh's premier dining destination.">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="ar_SA">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="The Tahlia Cafe | Premium Dining & Coffee in Riyadh">
-    <meta name="twitter:description" content="Experience the finest Arabic coffee and gourmet cuisine at The Tahlia Cafe.">
-    <title>The Tahlia Cafe | Premium Dining & Coffee in Riyadh, Saudi Arabia</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>مطعم طاهرة | Tahlia Restaurant - الرياض</title>
+    <meta name="description" content="مطعم فاخر على شارع التحلية في الرياض يقدم مأشق على الطعام العالمي والمشويات الإماراتية الأصيلة">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#C41E3A',
+                        secondary: '#8B0000',
+                        gold: '#D4AF37',
+                    },
+                    fontFamily: {
+                        'arabic': ['Cairo', 'sans-serif'],
+                        'english': ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header class="site-header" id="header">
-        <div class="header-inner">
-            <div class="logo">
-                <span class="logo-icon">☕</span>
-                <span class="logo-text">The Tahlia Cafe</span>
+<body class="font-arabic bg-white text-gray-800" dir="rtl">
+    <header class="sticky top-0 bg-white/95 backdrop-blur-sm shadow-md z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-primary">
+                <span class="font-english">Tahlia Restaurant</span>
+                <span class="block text-sm font-arabic font-normal text-gray-600">/ طاهرة</span>
             </div>
-            <div class="header-actions">
-                <a href="https://wa.me/966501234567" class="header-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.785 9.785 0 01-5.31-1.642l-.361-.214-3.741.982.998-3.648-.235-.374a9.788 9.788 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                </a>
-                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
-                    <span class="hamburger"></span>
-                </button>
-            </div>
+            <ul class="hidden md:flex space-x-8 space-x-reverse">
+                <li><a href="#home" class="hover:text-primary transition">الرئيسية</a></li>
+                <li><a href="#menu" class="hover:text-primary transition">القائمة</a></li>
+                <li><a href="#location" class="hover:text-primary transition">الموقع</a></li>
+                <li><a href="#contact" class="hover:text-primary transition">اتصل بنا</a></li>
+            </ul>
+            <button class="md:hidden" id="mobile-menu-btn">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </nav>
+        <div class="hidden md:hidden bg-white border-t" id="mobile-menu">
+            <ul class="px-4 py-2">
+                <li><a href="#home" class="block py-2 hover:text-primary">الرئيسية</a></li>
+                <li><a href="#menu" class="block py-2 hover:text-primary">القائمة</a></li>
+                <li><a href="#location" class="block py-2 hover:text-primary">الموقع</a></li>
+                <li><a href="#contact" class="block py-2 hover:text-primary">اتصل بنا</a></li>
+            </ul>
         </div>
     </header>
-    <nav class="main-nav" id="mainNav">
-        <ul class="nav-list">
-            <li><a href="#home" class="nav-link active">Home</a></li>
-            <li><a href="#menu" class="nav-link">Menu</a></li>
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-    </nav>
-    <section class="hero" id="home" role="banner" aria-label="Main hero banner">
-        <div class="hero-bg" aria-hidden="true"></div>
-        <div class="hero-overlay" aria-hidden="true"></div>
-        <div class="hero-content">
-            <p class="hero-subtitle">مقهى فاخر ومطعم</p>
-            <h1 class="hero-title">The Tahlia <span>Cafe</span></h1>
-            <p class="hero-description">Experience the finest Arabic coffee and gourmet cuisine in the heart of Riyadh. Our cafe blends traditional Saudi hospitality with modern culinary excellence, offering an elegant retreat where authentic flavors meet contemporary sophistication. From our premium single-origin beans carefully selected from the highlands of Jazan to our artisanal dishes crafted by internationally-trained chefs, every element is designed to create an unforgettable dining experience that celebrates the rich culinary heritage of the Arabian Peninsula.</p>
-            <div class="hero-features" role="list" aria-label="Key features">
-                <div class="feature" role="listitem">
-                    <span class="feature-icon" aria-hidden="true">☕</span>
-                    <span class="feature-text">Premium Coffee</span>
-                </div>
-                <div class="feature" role="listitem">
-                    <span class="feature-icon" aria-hidden="true">🍽️</span>
-                    <span class="feature-text">Gourmet Dining</span>
-                </div>
-                <div class="feature" role="listitem">
-                    <span class="feature-icon" aria-hidden="true">🌟</span>
-                    <span class="feature-text">5-Star Service</span>
-                </div>
-            </div>
-            <div class="hero-buttons">
-                <a href="https://wa.me/966501234567" class="cta-button primary" target="_blank" rel="noopener noreferrer" aria-label="Order now via WhatsApp - opens in new window">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.520.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.785 9.785 0 01-5.31-1.642l-.361-.214-3.741.982.998-3.648-.235-.374a9.788 9.788 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                    Order Now
-                </a>
-                <a href="#menu" class="cta-button secondary">View Menu</a>
-            </div>
-        </div>
-        <div class="scroll-indicator" aria-hidden="true">
-            <span>Scroll to explore</span>
-            <div class="scroll-arrow"></div>
-        </div>
-    </section>
-    <section class="about-preview" id="about">
-        <div class="section-container">
-            <h2 class="section-title">Our Story</h2>
-            <p class="section-subtitle">Established 2018</p>
-            <div class="about-grid">
-                <div class="about-card">
-                    <div class="about-icon">🏛️</div>
-                    <h3>Heritage</h3>
-                    <p>The Tahlia Cafe was born from a passion to bring authentic Saudi coffee traditions to Riyadh. We source our beans from the finest plantations in the southwestern regions of Saudi Arabia, ensuring every cup honors centuries-old brewing techniques passed down through generations.</p>
-                </div>
-                <div class="about-card">
-                    <div class="about-icon">👨‍🍳</div>
-                    <h3>Culinary Excellence</h3>
-                    <p>Our kitchen blends traditional Saudi flavors with international culinary arts. Executive Chef Mohammed Al-Rashid brings 15 years of experience from Michelin-starred restaurants across Europe, creating a unique fusion that celebrates both local heritage and global innovation.</p>
-                </div>
-                <div class="about-card">
-                    <div class="about-icon">🎨</div>
-                    <h3>Ambiance</h3>
-                    <p>The interior design at The Tahlia Cafe reflects the elegant fusion of contemporary minimalism with traditional Najdi architectural elements. Handcrafted wooden panels, brass fixtures, and warm ambient lighting create an atmosphere that is both sophisticated and deeply inviting.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="menu-section" id="menu" role="region" aria-label="Cafe menu">
-        <div class="section-container">
-            <h2 class="section-title">Our Culinary Menu</h2>
-            <p class="section-subtitle">Carefully crafted dishes using the finest ingredients sourced locally and internationally</p>
-            <div class="menu-grid">
-                <div class="menu-category" role="region" aria-labelledby="arabic-coffee-heading">
-                    <div class="category-header">
-                        <span class="category-icon" aria-hidden="true">☕</span>
-                        <h3 id="arabic-coffee-heading">Signature Arabic Coffee Collection</h3>
-                    </div>
-                    <ul class="menu-items">
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">The Tahlia Special Qahwa</span>
-                                <span class="item-description">Traditional Saudi coffee with cardamom, saffron, and cloves, served with premium Ajwa dates from Medina</span>
-                            </div>
-                            <span class="item-price">SAR 18</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">Nescafe Classic</span>
-                                <span class="item-description">Rich, full-bodied instant coffee prepared to perfection with condensed milk option</span>
-                            </div>
-                            <span class="item-price">SAR 12</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">Turkish Coffee</span>
-                                <span class="item-description">Strong, unfiltered coffee with optional cardamom, served in traditional copper cezve with lokum</span>
-                            </div>
-                            <span class="item-price">SAR 15</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">Espresso doppio</span>
-                                <span class="item-description">Double shot of our signature blend, featuring beans roasted to order for maximum aroma</span>
-                            </div>
-                            <span class="item-price">SAR 14</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">Cappuccino</span>
-                                <span class="item-description">Velvety microfoam milk over rich espresso, dusted with premium cocoa powder</span>
-                            </div>
-                            <span class="item-price">SAR 20</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">Arabic Mint Tea</span>
-                                <span class="item-description">Fresh mint leaves steeped in traditional tea pot, served steaming hot with honey on the side</span>
-                            </div>
-                            <span class="item-price">SAR 16</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="menu-category" role="region" aria-labelledby="cold-brew-heading">
-                    <div class="category-header">
-                        <span class="category-icon" aria-hidden="true">🥤</span>
-                        <h3 id="cold-brew-heading">Cold Brew & Iced Specialties</h3>
-                    </div>
-                    <ul class="menu-items">
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">Signature Cold Brew</span>
-                                <span class="item-description">18-hour steeped cold brew, smooth and naturally sweet, served over handcrafted ice spheres</span>
-                            </div>
-                            <span class="item-price">SAR 22</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">Iced Americano</span>
-                                <span class="item-description">Chilled espresso diluted with filtered water over ice, served in tall glass with lemon twist</span>
-                            </div>
-                            <span class="item-price">SAR 16</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">Iced Caramel Macchiato</span>
-                                <span class="item-description">Espresso layered with vanilla-infused milk and golden caramel drizzle, topped with whipped cream</span>
-                            </div>
-                            <span class="item-price">SAR 24</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">Frappuccino</span>
-                                <span class="item-description">Blended iced coffee with your choice of mocha, vanilla, or caramel flavor, served with cream</span>
-                            </div>
-                            <span class="item-price">SAR 26</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">Iced Matcha Latte</span>
-                                <span class="item-description">Premium Japanese matcha whisked to perfection with cold milk, lightly sweetened with agave</span>
-                            </div>
-                            <span class="item-price">SAR 28</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">Fresh Orange Juice</span>
-                                <span class="item-description">Squeezed daily from Valencia oranges, served ice-cold with mint garnish</span>
-                            </div>
-                            <span class="item-price">SAR 20</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="menu-category" role="region" aria-labelledby="breakfast-heading">
-                    <div class="category-header">
-                        <span class="category-icon" aria-hidden="true">🍳</span>
-                        <h3 id="breakfast-heading">Traditional & International Breakfast</h3>
-                    </div>
-                    <ul class="menu-items">
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">Shakshuka</span>
-                                <span class="item-description">Poached eggs in spiced tomato sauce with bell peppers, onions, and warm sourdough bread</span>
-                            </div>
-                            <span class="item-price">SAR 28</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">Foul Medames</span>
-                                <span class="item-description">Slow-cooked fava beans with olive oil, cumin, garlic, and fresh herbs, served with flatbread</span>
-                            </div>
-                            <span class="item-price">SAR 20</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">Classic Eggs Benedict</span>
-                                <span class="item-description">Poached eggs on toasted English muffin with Canadian bacon and hollandaise sauce</span>
-                            </div>
-                            <span class="item-price">SAR 32</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">Pancake Stack</span>
-                                <span class="item-description">Fluffy pancakes layered with Saudi honey, butter, and fresh mixed berries from local farms</span>
-                            </div>
-                            <span class="item-price">SAR 25</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">Saudi Balaleet</span>
-                                <span class="item-description">Sweet vermicelli noodles topped with seasoned omelette, a traditional Hijazi breakfast specialty</span>
-                            </div>
-                            <span class="item-price">SAR 24</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">Avocado Toast</span>
-                                <span class="item-description">Smashed avocado on artisanal sourdough with chili flakes, microgreens, and hemp seeds</span>
-                            </div>
-                            <span class="item-price">SAR 30</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="menu-category" role="region" aria-labelledby="healthy-heading">
-                    <div class="category-header">
-                        <span class="category-icon" aria-hidden="true">🥗</span>
-                        <h3 id="healthy-heading">Healthy Bowls & Salads</h3>
-                    </div>
-                    <ul class="menu-items">
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">Acai Power Bowl</span>
-                                <span class="item-description">Acai blend topped with house-made granola, fresh banana, Saudi wild honey, chia seeds, and seasonal berries</span>
-                            </div>
-                            <span class="item-price">SAR 35</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">Quinoa Wellness Bowl</span>
-                                <span class="item-description">Tri-color quinoa with roasted vegetables, avocado, chickpeas, and house-made tahini dressing</span>
-                            </div>
-                            <span class="item-price">SAR 38</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">Grilled Chicken Salad</span>
-                                <span class="item-description">Herb-marinated chicken breast over mixed greens with cherry tomatoes, cucumber, and balsamic vinaigrette</span>
-                            </div>
-                            <span class="item-price">SAR 42</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">Fattoush Royale</span>
-                                <span class="item-description">Traditional Middle Eastern salad with crispy pita, fresh vegetables, and sumac dressing</span>
-                            </div>
-                            <span class="item-price">SAR 26</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">Greek Yogurt Parfait</span>
-                                <span class="item-description">Layered with nuts, dates, and honey, topped with rose water essence</span>
-                            </div>
-                            <span class="item-price">SAR 28</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">Mediterranean Salmon Bowl</span>
-                                <span class="item-description">Grilled salmon over quinoa with olives, feta, cucumber, and lemon-olive oil dressing</span>
-                            </div>
-                            <span class="item-price">SAR 52</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="menu-category" role="region" aria-labelledby="pasta-heading">
-                    <div class="category-header">
-                        <span class="category-icon" aria-hidden="true">🍝</span>
-                        <h3 id="pasta-heading">Pasta & Main Courses</h3>
-                    </div>
-                    <ul class="menu-items">
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">Truffle Mushroom Pasta</span>
-                                <span class="item-description">Fresh tagliatelle with wild mushrooms, truffle oil, cream sauce, and parmesan shavings</span>
-                            </div>
-                            <span class="item-price">SAR 58</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">Grilled Ribeye Steak</span>
-                                <span class="item-description">Prime 300g ribeye steak grilled to perfection, served with roasted vegetables and mashed potatoes</span>
-                            </div>
-                            <span class="item-price">SAR 125</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">Lamb Mandi</span>
-                                <span class="item-description">Slow-roasted lamb over aromatic spiced rice with raisins, almonds, and authentic yogurt sauce</span>
-                            </div>
-                            <span class="item-price">SAR 85</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">Mixed Grill Platter</span>
-                                <span class="item-description">Chef selection of grilled kofta, chicken shish tawook, lamb chops, and seasonal vegetables</span>
-                            </div>
-                            <span class="item-price">SAR 95</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">Chicken Shawarma Plate</span>
-                                <span class="item-description">Marinated chicken with garlic sauce, pickles, and warm pita bread with rice</span>
-                            </div>
-                            <span class="item-price">SAR 45</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">Sea Bass Fillet</span>
-                                <span class="item-description">Pan-seared sea bass with herb crust, served with roasted vegetable couscous</span>
-                            </div>
-                            <span class="item-price">SAR 98</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="menu-category" role="region" aria-labelledby="desserts-heading">
-                    <div class="category-header">
-                        <span class="category-icon" aria-hidden="true">🍰</span>
-                        <h3 id="desserts-heading">Traditional Desserts & Sweets</h3>
-                    </div>
-                    <ul class="menu-items">
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">Classic Kunafa</span>
-                                <span class="item-description">Warm, crispy shredded pastry filled with sweet cheese, soaked in rose-water aromatic syrup</span>
-                            </div>
-                            <span class="item-price">SAR 22</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">Muhallebi</span>
-                                <span class="item-description">Creamy milk pudding infused with rose water and cardamom, topped with crushed pistachios</span>
-                            </div>
-                            <span class="item-price">SAR 18</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">Chocolate Lava Cake</span>
-                                <span class="item-description">Warm chocolate cake with molten center, served with vanilla bean ice cream and raspberry coulis</span>
-                            </div>
-                            <span class="item-price">SAR 28</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">Date Madgout</span>
-                                <span class="item-description">Stuffed dates with almond paste and Arabic coffee cream, a true Saudi delicacy</span>
-                            </div>
-                            <span class="item-price">SAR 16</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">Baklava Trio</span>
-                                <span class="item-description">Assorted layers of phyllo pastry with nuts, honey, and orange blossom water</span>
-                            </div>
-                            <span class="item-price">SAR 24</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">Cheesecake with Date Sauce</span>
-                                <span class="item-description">Creamy New York style cheesecake topped with warm date and caramel sauce</span>
-                            </div>
-                            <span class="item-price">SAR 30</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="menu-category" role="region" aria-labelledby="pastries-heading">
-                    <div class="category-header">
-                        <span class="category-icon" aria-hidden="true">🥐</span>
-                        <h3 id="pastries-heading">Fresh Pastries & Bakery</h3>
-                    </div>
-                    <ul class="menu-items">
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">Croissant au Beurre</span>
-                                <span class="item-description">Butter croissant baked fresh daily, flaky layers with premium French butter</span>
-                            </div>
-                            <span class="item-price">SAR 18</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">Manakish Zaatar</span>
-                                <span class="item-description">Traditional flatbread topped with zaatar and olive oil, baked in clay oven</span>
-                            </div>
-                            <span class="item-price">SAR 14</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">Cinnamon Roll</span>
-                                <span class="item-description">Soft brioche dough with cinnamon swirl, topped with cream cheese frosting</span>
-                            </div>
-                            <span class="item-price">SAR 20</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">Olive & Herb Focaccia</span>
-                                <span class="item-description">Italian focaccia with Kalamata olives, rosemary, and sea salt</span>
-                            </div>
-                            <span class="item-price">SAR 16</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">Chocolate Danish</span>
-                                <span class="item-description">Flaky pastry filled with dark chocolate, dusted with powdered sugar</span>
-                            </div>
-                            <span class="item-price">SAR 18</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">Arabic Sesame Bread</span>
-                                <span class="item-description">Traditional ka'ak bread with sesame seeds, perfect with labneh and olives</span>
-                            </div>
-                            <span class="item-price">SAR 12</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="menu-highlights" role="region" aria-label="Chef recommendations">
-        <div class="section-container">
-            <h2 class="section-title">Chef's Signature Selections</h2>
-            <p class="section-subtitle">Our most celebrated and award-winning dishes</p>
-            <div class="highlights-grid">
-                <div class="highlight-card" role="article">
-                    <div class="highlight-number" aria-hidden="true">01</div>
-                    <div class="highlight-content">
-                        <h4>The Tahlia Special Platter</h4>
-                        <p>A curated selection of premium lamb, grilled to perfection with our signature spice blend featuring Saudi cardamom and black lime, served with aromatic saffron rice and seasonal grilled vegetables from local farms.</p>
-                        <span class="highlight-price">SAR 145</span>
-                    </div>
-                </div>
-                <div class="highlight-card" role="article">
-                    <div class="highlight-number" aria-hidden="true">02</div>
-                    <div class="highlight-content">
-                        <h4>Royal Arabic Breakfast</h4>
-                        <p>A lavish breakfast spread featuring shakshuka, foul medames, fresh manakish, assorted local cheeses, premium olives, and our signature Arabic coffee blend served in traditional pots.</p>
-                        <span class="highlight-price">SAR 65</span>
-                    </div>
-                </div>
-                <div class="highlight-card" role="article">
-                    <div class="highlight-number" aria-hidden="true">03</div>
-                    <div class="highlight-content">
-                        <h4>Premium Seafood Feast</h4>
-                        <p>Fresh catch of the day grilled with Mediterranean herbs, accompanied by garlic butter rice and seasonal grilled vegetables, finished with our house-made harissa sauce.</p>
-                        <span class="highlight-price">SAR 165</span>
-                    </div>
-                </div>
-                <div class="highlight-card" role="article">
-                    <div class="highlight-number" aria-hidden="true">04</div>
-                    <div class="highlight-content">
-                        <h4>Truffle Kabsa Royale</h4>
-                        <p>Our signature Saudi kabsa elevated with black truffle shavings, slow-cooked with 24-spice blend, served in traditional clay pot with side of mutabbaq.</p>
-                        <span class="highlight-price">SAR 95</span>
-                    </div>
-                </div>
-                <div class="highlight-card" role="article">
-                    <div class="highlight-number" aria-hidden="true">05</div>
-                    <div class="highlight-content">
-                        <h4>Golden Date Cheesecake</h4>
-                        <p>A fusion dessert combining New York-style cheesecake with Saudi date caramel, garnished with gold leaf and rose petals for an unforgettable finish.</p>
-                        <span class="highlight-price">SAR 32</span>
-                    </div>
-                </div>
-                <div class="highlight-card" role="article">
-                    <div class="highlight-number" aria-hidden="true">06</div>
-                    <div class="highlight-content">
-                        <h4>Traditional Mezze Platter</h4>
-                        <p>An extensive selection of cold and hot mezze including hummus, mutabbal, falafel, labneh, olives, and fresh Arabic bread, perfect for sharing.</p>
-                        <span class="highlight-price">SAR 75</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="contact-section" id="contact" role="region" aria-label="Contact information">
-        <div class="section-container">
-            <h2 class="section-title">Visit Our Establishment</h2>
-            <p class="section-subtitle">We welcome you to experience authentic Saudi hospitality at The Tahlia Cafe</p>
-            <div class="contact-grid">
-                <div class="contact-card" role="article">
-                    <div class="contact-icon" aria-hidden="true">📍</div>
-                    <h3>Prime Location</h3>
-                    <p>Al-Tahlia Street<br>Riyadh 12211<br>Kingdom of Saudi Arabia<br><br><strong>Landmark:</strong> Opposite Kingdom Tower<br><strong>Parking:</strong> Valet available 24/7</p>
-                </div>
-                <div class="contact-card" role="article">
-                    <div class="contact-icon" aria-hidden="true">🕐</div>
-                    <h3>Operating Hours</h3>
-                    <p><strong>Saturday - Wednesday:</strong><br>6:00 AM - 12:00 AM<br><br><strong>Thursday - Friday:</strong><br>6:00 AM - 2:00 AM<br><br><strong>Kitchen closes 30 minutes prior</strong></p>
-                </div>
-                <div class="contact-card" role="article">
-                    <div class="contact-icon" aria-hidden="true">📞</div>
-                    <h3>Contact Channels</h3>
-                    <p><strong>Reservations:</strong> +966 11 234 5678<br><strong>General Inquiries:</strong> info@altahliacafe.sa<br><strong>Takeaway Orders:</strong> <a href="https://wa.me/966501234567" target="_blank" rel="noopener noreferrer">+966 55 123 4567</a><br><strong>Email:</strong> reservations@altahliacafe.sa</p>
-                </div>
-                <div class="contact-card" role="article">
-                    <div class="contact-icon" aria-hidden="true">🚗</div>
-                    <h3>Getting Here</h3>
-                    <p><strong>Nearest Metro:</strong> Al-Tahlia Station (Red Line)<br><strong>Bus Routes:</strong> 12, 45, 78 stop nearby<br><strong>Taxi:</strong> Any ride-sharing app works perfectly<br><strong>Accessibility:</strong> Fully wheelchair accessible</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="whatsapp-cta-section" id="whatsapp" role="region" aria-label="WhatsApp order contact">
-        <div class="whatsapp-cta-content">
-            <h3>Ready to Experience The Tahlia?</h3>
-            <p>Chat with our hospitality team directly on WhatsApp for quick orders, table reservations, or any questions about our menu. We're available 24/7 to ensure your visit is nothing short of exceptional.</p>
-            <a href="https://wa.me/966501234567" class="whatsapp-cta-button" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp for orders and reservations - opens in new window">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.520.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.785 9.785 0 01-5.31-1.642l-.361-.214-3.741.982.998-3.648-.235-.374a9.788 9.788 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                Chat on WhatsApp
+
+    <section id="home" class="relative h-screen flex items-center justify-center text-center">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1517244586624-54e74b4e0f58?w=1920&h=1080&fit=crop');"></div>
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="relative z-10 px-4 max-w-4xl">
+            <h1 class="text-4xl md:text-6xl font-english font-bold text-white mb-4">
+                تجربة طعم لا تُنسى
+            </h1>
+            <p class="text-xl md:text-2xl text-gold mb-8 font-bold">Experience Unforgettable Flavors</p>
+            <p class="text-lg text-white mb-8 max-w-2xl mx-auto">
+                مطعم طاهرة على شارع التحلية - الرياض. نقدم لكم أشهى المشويات والأطباق العالمية في أجواء فاخرة
+            </p>
+            <a href="#contact" class="inline-block bg-primary hover:bg-secondary text-white px-8 py-4 rounded-full text-lg font-bold transition transform hover:scale-105">
+                احجز طاولتك الآن
             </a>
-            <p class="whatsapp-subtext">Typically replies within minutes | Available 24/7 for urgent inquiries</p>
         </div>
     </section>
-    <footer class="site-footer" role="contentinfo">
-        <div class="footer-container">
-            <div class="footer-brand">
-                <span class="footer-logo">The Tahlia Cafe</span>
-                <p class="footer-tagline">Where tradition meets excellence. Premium dining and coffee in the heart of Riyadh since 2018. Experience the authentic flavors of Saudi Arabia with every carefully crafted dish.</p>
+
+    <section id="menu" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-english font-bold text-primary mb-4">قائمة طعامنا</h2>
+                <p class="text-gray-600">Our Menu / قائمة الطعام</p>
             </div>
-            <div class="footer-links" role="navigation" aria-label="Footer navigation">
-                <h4>Site Navigation</h4>
-                <ul>
-                    <li><a href="#home" aria-label="Go to home section">Home</a></li>
-                    <li><a href="#menu" aria-label="View our menu">Menu</a></li>
-                    <li><a href="#about" aria-label="Learn about us">About Us</a></li>
-                    <li><a href="#contact" aria-label="Contact information">Contact</a></li>
-                    <li><a href="#whatsapp" aria-label="Order via WhatsApp">Order Now</a></li>
-                </ul>
-            </div>
-            <div class="footer-links" role="navigation" aria-label="Legal links">
-                <h4>Legal & Policies</h4>
-                <ul>
-                    <li><a href="#" aria-label="Privacy policy">Privacy Policy</a></li>
-                    <li><a href="#" aria-label="Terms of service">Terms of Service</a></li>
-                    <li><a href="#" aria-label="Cookie policy">Cookie Policy</a></li>
-                    <li><a href="#" aria-label="Accessibility statement">Accessibility</a></li>
-                </ul>
-            </div>
-            <div class="footer-social" role="complementary" aria-label="Social media links">
-                <h4>Connect With Us</h4>
-                <div class="social-icons">
-                    <a href="https://instagram.com/altahliacafe" aria-label="Follow us on Instagram" target="_blank" rel="noopener noreferrer">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-                    </a>
-                    <a href="https://twitter.com/altahliacafe" aria-label="Follow us on Twitter" target="_blank" rel="noopener noreferrer">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/></svg>
-                    </a>
-                    <a href="https://facebook.com/altahliacafe" aria-label="Follow us on Facebook" target="_blank" rel="noopener noreferrer">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
-                    </a>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+                    <img src="https://images.unsplash.com/photo-1547592180-85f173997544?w=600&h=400&fit=crop" alt="مشاوي" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-primary mb-3">المشاوي</h3>
+                        <p class="text-gray-600 mb-4">كبسه دجاج، كبسه لحم، شيش طاوق</p>
+                        <ul class="space-y-2 text-sm">
+                            <li>• كبسة دجاج بالبرتقال - ٤٥ ريال</li>
+                            <li>• كبسة لحم غزالي - ٥٢ ريال</li>
+                            <li>• شيش طاوق دجاج - ٣٨ ريال</li>
+                            <li>• رشاوي لحم - ٤٨ ريال</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+                    <img src="https://images.unsplash.com/photo-1563986785820-8d03f65e1a14?w=600&h=400&fit=crop" alt="الأطباق البحرية" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-primary mb-3">الأطباق البحرية</h3>
+                        <p class="text-gray-600 mb-4">سمك مشوي، لحم بحري، طعام خليجي</p>
+                        <ul class="space-y-2 text-sm">
+                            <li>• لابس سمك مشوي - ٦٥ ريال</li>
+                            <li>• جيس لحم غذائي - ٦٠ ريال</li>
+                            <li>• سمك بالزعتر - ٥٥ ريال</li>
+                            <li>• كابلشاوي لحم بحري - ٧٠ ريال</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+                    <img src="https://images.unsplash.com/photo-1571091702215-9c4a5e32a1e3?w=600&h=400&fit=crop" alt="المقبلات" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-primary mb-3">المقبلات</h3>
+                        <p class="text-gray-600 mb-4">سلطات، مخبوت، أطباق تراثية</p>
+                        <ul class="space-y-2 text-sm">
+                            <li>• فتوش خضار - ٢٢ ريال</li>
+                            <li>• حمص باللحم - ٢٠ ريال</li>
+                            <li>• مخبوت دجاج - ٣٠ ريال</li>
+                            <li>• سلطة عربية - ١٨ ريال</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+                    <img src="https://images.unsplash.com/photo-1551024506-055272a0d3e0?w=600&h=400&fit=crop" alt="الحلويات" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-primary mb-3">الحلويات</h3>
+                        <p class="text-gray-600 mb-4">حلويات تراثية وحلويات فاخرة</p>
+                        <ul class="space-y-2 text-sm">
+                            <li>• كنافة بالسمن - ٢٥ ريال</li>
+                            <li>• بقلاوة لوز - ٢٢ ريال</li>
+                            <li>• هريس بالعسل - ٢٨ ريال</li>
+                            <li>• مهلبية - ١٩ ريال</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+                    <img src="https://images.unsplash.com/photo-1513578121089-1b7e3c6a2c7f?w=600&h=400&fit=crop" alt="المشروبات" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-primary mb-3">المشروبات</h3>
+                        <p class="text-gray-600 mb-4">مشروبات عربية وعالمية</p>
+                        <ul class="space-y-2 text-sm">
+                            <li>• عصير برتقال طازج - ١٢ ريال</li>
+                            <li>• ليمون بالنعناع - ١٠ ريال</li>
+                            <li>• شاي بالنعناع - ٨ ريال</li>
+                            <li>• قهوة عربية - ١٥ ريال</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+                    <img src="https://images.unsplash.com/photo-1559382927-d3a394c916d6?w=600&h=400&fit=crop" alt="العشاء" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-primary mb-3">وجبات العشاء</h3>
+                        <p class="text-gray-600 mb-4">أفضل وجبات العشاء المتوفرة</p>
+                        <ul class="space-y-2 text-sm">
+                            <li>• طاجين لحم مع خضار - ٤٢ ريال</li>
+                            <li>• بولانيس لحم - ٣٨ ريال</li>
+                            <li>• مسقوق لحم - ٣٥ ريال</li>
+                            <li>• طاجين دجاج - ٣٢ ريال</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="footer-newsletter" role="form" aria-label="Newsletter signup">
-                <h4>Newsletter</h4>
-                <p>Subscribe for exclusive offers and updates on seasonal specials</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Enter your email" aria-label="Email address for newsletter signup">
-                    <button type="submit" aria-label="Subscribe to newsletter">Subscribe</button>
+        </div>
+    </section>
+
+    <section id="location" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-english font-bold text-primary mb-4">موقعنا</h2>
+                <p class="text-gray-600">Location / العنوان</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="h-96 bg-gray-200 rounded-lg overflow-hidden">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3629.2423432!2d46.6851!3d24.6467!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x0!2zTsKNNTc0JzU0Mjc!5e0!3m2!1sen!2ssa!4v1234567890"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        class="object-cover">
+                    </iframe>
+                </div>
+
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-2xl font-bold text-primary mb-3">طاهرة - Tahlia Restaurant</h3>
+                        <p class="text-lg text-gray-700">شارع التحلية، حي السفارات</p>
+                        <p class="text-gray-600">Tahlia Street, Al-Safa District</p>
+                        <p class="text-gray-600">الرياض ١١٥٦٤، المملكة العربية السعودية</p>
+                        <p class="text-gray-600">Riyadh 11564, Saudi Arabia</p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3 space-x-reverse">
+                            <svg class="w-6 h-6 text-primary mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <div>
+                                <p class="font-bold">ساعات العمل</p>
+                                <p class="text-gray-600">مفتوح يوميًا: ١٠:٠٠ ص - ١١:٣٠ م</p>
+                                <p class="text-gray-600">Open daily: 10:00 AM - 11:30 PM</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-3 space-x-reverse">
+                            <svg class="w-6 h-6 text-primary mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.242a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.242 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                            <div>
+                                <p class="font-bold">اتصل بنا</p>
+                                <p class="text-gray-600">+٩٦٦ ١١ ٩٩٩٩ ٨٨٧٧</p>
+                                <p class="text-gray-600">+966 11 9999 8877</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-english font-bold mb-4">احجز طاولتك الآن</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">
+                لا تفوت تجربة الطعام الفاخر في طاهرة. احجز طاولتك اليوم واستمتع بأجواء مميزة
+            </p>
+
+            <div class="max-w-md mx-auto bg-white rounded-lg p-8 text-gray-800">
+                <form id="reservation-form" class="space-y-4">
+                    <div>
+                        <input type="text" placeholder="الاسم الكامل" required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none text-right">
+                    </div>
+                    <div>
+                        <input type="tel" placeholder="رقم الجوال" required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none text-right">
+                    </div>
+                    <div>
+                        <input type="date" required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none">
+                    </div>
+                    <div>
+                        <input type="time" required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none">
+                    </div>
+                    <div>
+                        <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none">
+                            <option value="2">٢ أشخاص</option>
+                            <option value="4">٤ أشخاص</option>
+                            <option value="6">٦ أشخاص</option>
+                            <option value="8">٨ أشخاص</option>
+                        </select>
+                    </div>
+                    <button type="submit"
+                        class="w-full bg-primary hover:bg-secondary text-white py-3 rounded-lg font-bold transition transform hover:scale-105">
+                        تأكيد الحجز
+                    </button>
                 </form>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 The Tahlia Cafe. All rights reserved. | Designed with passion in Riyadh, Saudi Arabia.</p>
-                <p><a href="tel:+96611234567" aria-label="Call for reservations">+966 11 234 5678</a> | <a href="https://wa.me/966501234567" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp for orders">WhatsApp Orders</a></p>
+        </div>
+    </section>
+
+    <footer class="py-12 bg-gray-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-right">
+                <div>
+                    <h4 class="font-english font-bold text-2xl mb-4">
+                        <span class="text-primary">Tahlia Restaurant</span>
+                        <span class="block text-sm font-arabic text-gray-400">/ طاهرة</span>
+                    </h4>
+                    <p class="text-gray-400">مطعم فاخر على شارع التحلية في الرياض</p>
+                </div>
+
+                <div>
+                    <h5 class="font-bold mb-4">روابط سريعة</h5>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#home" class="hover:text-white transition">الرئيسية</a></li>
+                        <li><a href="#menu" class="hover:text-white transition">القائمة</a></li>
+                        <li><a href="#location" class="hover:text-white transition">الموقع</a></li>
+                        <li><a href="#contact" class="hover:text-white transition">الحجز</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="font-bold mb-4">تابعنا</h5>
+                    <div class="flex justify-center md:justify-start space-x-4 space-x-reverse">
+                        <a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-secondary transition">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.24.195 2.24.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-secondary transition">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M8.29 20.251c7.554-6.475 11.212-10.57 11.212-14.114 0-.21-.006-.42-.015-.629A7.998 7.998 0 002.92 8.2c.195.86.99 1.694 1.913 2.029l.015.007.772.026c.718-.015 1.366-.207 1.94-.527-.7-.18-1.312-.509-1.868-.953l.008-.006A7.996 7.996 0 008.29 20.25z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-secondary transition">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.271.057 2.665.39 3.283.71.63.326.997.694 1.624 1.321.627.627 1.284 1.188 1.62 1.626.32.616.654 1.768.71 3.283.058 1.266.07 2.102.07 4.306v4.842c0 2.204-.012 3.04-.07 4.306-.057 1.515-.39 2.665-.71 3.283-.326.63-.694.997-1.321 1.624-.627.627-1.188 1.284-1.626 1.62-.616.32-1.768.654-3.283.71-1.266.058-2.102.07-4.306.07H7.67c-2.204 0-3.04-.012-4.306-.07-1.515-.057-2.665-.39-3.283-.71-.63-.326-.997-.694-1.624-1.321-.627-.627-1.284-1.188-1.62-1.626A6.98 6.98 0 01.07 19.7C.012 18.44.012 17.604 0 15.4v-4.842c0-2.204.012-3.04.07-4.306.057-1.515.39-2.665.71-3.283.326-.63.694-.997 1.321-1.624.627-.627 1.188-1.284 1.626-1.62.616-.32 1.768-.654 3.283-.71 1.266-.058 2.102-.07 4.306-.07h4.842z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; ٢٠٢٦ Tahlia Restaurant. جميع الحقوق محفوظة.</p>
             </div>
         </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-/r6OQURNdqE93s7i3GxrHJXP+ZUeW5PfJJeNGBQy7jx8+Y9egJvHkI6MlU7pLqjeM8YFfT5eXVULdW7n5f7i72A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-t0XZv6hqTgBSwg5s5KZ0oPZ8HkDlLtZk07zw8HzbCJP06reI8J7tUKQe8cNfHDWWPGHIIZxpPzj3qkHMqE/S4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="app.js" defer></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            document.body.setAttribute('data-loaded', 'true');
-        });
-    </script>
+
+    <script src="script.js"></script>
 </body>
 </html>
