@@ -20,8 +20,7 @@ Netlify Build
 Netlify Build Complete                                        
 ────────────────────────────────────────────────────────────────
 ​
-(Netlify Build completed in 246ms)
+(Netlify Build completed in 485ms)
 
-⬥ Deploying 9 files anonymously...
-⠋ Uploading 3 files
- ›   Error: Failed to upload file deploy-url.txt: 422 Unprocessable Entity
+⬥ Deploying 3 files anonymously...
+ ›   Error: You've reached the daily limit for anonymous deploys. Run netlify login --request <message> to sign up or log in, then retry your deploy.

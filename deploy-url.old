@@ -20,8 +20,8 @@ Netlify Build
 Netlify Build Complete                                        
 ────────────────────────────────────────────────────────────────
 ​
-(Netlify Build completed in 246ms)
+(Netlify Build completed in 235ms)
 
-⬥ Deploying 9 files anonymously...
-⠋ Uploading 3 files
+⬥ Deploying 8 files anonymously...
+⠋ Uploading 2 files
  ›   Error: Failed to upload file deploy-url.txt: 422 Unprocessable Entity
