@@ -1,3 +1,0 @@
-- Outreach Status: In Progress. Awaiting prospect response.
-- Listing Status: Prepared for potential public float.
-- Platform: Motion.gg (Pending Vick approval)
