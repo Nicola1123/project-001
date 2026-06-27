@@ -1,1 +1,1 @@
-QUALITY_APPROVED
+DEPLOYED:vick_approved
